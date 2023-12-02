@@ -5,7 +5,9 @@ guess.title("guess the number")
 guess.configure(bg='PaleTurquoise2')
 guess.resizable(0,0)
 guess.geometry("500x300+400+200")
+#random number wil be generated and stre in the answer varible 
 answer= random.randint(1,100)
+#this line to mention the no. of chance of user
 chance_var=IntVar()
 def restart():
     global attempts
@@ -21,6 +23,7 @@ def escape():
     guess.destroy()
 attempts=10
 #function define for checking answers 
+#this funcition to chech the answer when the user wil gave the input
 def check_answer():
     global attempts
     global text
